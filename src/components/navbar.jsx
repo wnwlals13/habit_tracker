@@ -1,17 +1,13 @@
-import React, { Component } from "react";
+import React, { memo } from "react";
 
-class Navbar extends Component {
-  render() {
-    return (
-      <header className="navbar">
-        <span className="nav nav-icon">
-          <i class="fas fa-leaf"></i>
-        </span>
-        <span className="nav nav-title">Habit Tracker</span>
-        <span className="nav nav-count">{this.props.change}</span>
-      </header>
-    );
-  }
-}
+const Navbar = memo((props) => {
+  return (
+    <header className="navbar">
+      <i class="fas fa-leaf nav-icon"></i>
+      <span className="nav nav-title">Habit Tracker</span>
+      <span className="nav nav-count">{props.change}</span>
+    </header>
+  );
+});
 
 export default Navbar;

@@ -4,6 +4,11 @@
   --font-color-w: white;
   --border-radius: 5px;
 }
+
+* {
+  box-sizing: border-box;
+}
+
 /* navbar */
 .navbar {
   background: var(--background-color);
