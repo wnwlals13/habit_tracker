@@ -1,3 +1,2 @@
 ## Habit-tracker
-
-![main](./img/mainimg.png)
+<img src="./src/img/mainimg.png"  width="300">
