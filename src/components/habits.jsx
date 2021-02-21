@@ -4,6 +4,12 @@ import InputForm from "./inputForm";
 import React from "react";
 
 const Habits = (props) => {
+  // state = {
+  //  habits : [
+  // {name : 'reading', count : 0},
+  // {name : 'running', count : 0},
+  // ]
+  //}
   const handleIncrement = (habit) => {
     props.onIncrement(habit);
   };
@@ -20,9 +26,9 @@ const Habits = (props) => {
     props.onReset();
   };
   return (
-    <div>
+    <div className="main">
       <InputForm onAdd={addhabitFunction} />
-      <ul>
+      <ul className="habits">
         {props.habits.map((habit) => (
           <Habit
             key={habit.id}
@@ -34,6 +40,7 @@ const Habits = (props) => {
           />
         ))}
       </ul>
+
       <button className="reset" onClick={handleReset}>
         Reset All
       </button>

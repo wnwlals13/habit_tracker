@@ -65,7 +65,7 @@ const App = (props) => {
     );
   };
   return (
-    <div>
+    <div className="app">
       <Navbar change={habits.filter((item) => item.count > 0).length} />
       <Habits
         habits={habits}
