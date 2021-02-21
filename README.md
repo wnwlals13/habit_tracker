@@ -1,2 +1,2 @@
 ## Habit-tracker
-<img src="./src/img/mainimg.png"  width="300">
+깃허브 페이지 : https://wnwlals13.github.io/habit_tracker/
